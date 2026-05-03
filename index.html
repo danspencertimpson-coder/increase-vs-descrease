@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Nation Under God — American History</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div id="sidebar-header">
+        <div class="sidebar-logo">&#9768;</div>
+        <h1>One Nation<br/><span>Under God</span></h1>
+        <p class="sidebar-subtitle">American History &amp; Providence</p>
+      </div>
+
+      <div class="nav-section-label">CHAPTERS</div>
+      <ul id="chapter-nav"></ul>
+
+      <div class="nav-section-label">EXPLORE</div>
+      <ul class="nav-extra">
+        <li><a href="#timeline" class="nav-link" data-view="timeline">&#8635; Full Timeline</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main">
+      <!-- Content rendered here by app.js -->
+    </main>
+
+  </div>
+
+  <!-- Quiz modal -->
+  <div id="quiz-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="quiz-content"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
